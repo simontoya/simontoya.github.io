@@ -13,6 +13,32 @@
 </div>
 <ul>
     <li>
+        <h1>Collaborative Filtering for Implicit Feedback Datasets</h1>
+        <h4>Yifan Hu, Yehuda Koren and Chris Volinsky</h4>
+        <p>
+            The authors of this paper, present a new algorithm for implicit feedback. As it is expected the authors
+            first explain what is implicit feedback, that refers to all the actions that a user makes but without asking
+            or receiving an explicit input. For example asking a survey if you liked or not a certain tv show, in the
+            other hand implicit feedback could be the amount of time spent watching a specific tv show. For this they
+            present a new algorithm that is based on the fact, that implicit feedback does not receive any negative inputs
+            for example they can't know if a user disliked a program therefore they are able to suppose that if a user
+            watch for a little time a tv show is probably because they did not like it. So they decide that instead of
+            using a prediction of the rating, they are going to use a certain preference and a confidence on that amount
+            of preference. So after some algebraic and mathematical optimizations they are able to propose a model that
+            is able to predict a list of items for a user based on their activities with tv shows.
+        </p>
+        <p>
+            I really liked this paper because it explains how the implicit feedback works and they describe the main
+            problems this type of feedback presents. The authors after introducing the main idea of the implicit feedback
+            start to describe the multiple problems you can bump with and how to found or implement a solution for it.
+            I found really interesting how they are able to create sort of new metrics based on the idea of preference and
+            confidence. Also after reading the whole paper I notice that lots of the assumptions where made in the model,
+            particularly the part where they set to zero all values less than 0.5, personally I found interesting analyzing
+            this data and search a meaning for them because sometimes this type of outliers could contribute to design a
+            better recommender system.
+        </p>
+    </li>
+    <li>
         <h1>Slope One Predictors for Online Rating-Based Collaborative Filtering</h1>
         <h4>Daniel Lemire and Anna Maclachlan</h4>
         <p style="width: 50%">
