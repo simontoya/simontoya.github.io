@@ -13,6 +13,31 @@
 </div>
 <ul>
     <li>
+        <h1>Performance of Recommender algorithms on Top-N Recommendations tasks</h1>
+        <h4>Paolo Cremonesi, Yehuda Koren and Roberto Turrin</h4>
+        <p> This paper introduces the fact that the top-N recommendations should be evaluated over precision and recall
+            instead of using the more classical metricas like RMSE or MAE. Mainly because they state the fact that
+            a recommender system has good results in RMSE or MAE does not mean that it performs well for the top-N
+            recommendations. So they propose the following, first of all eliminate the most popular or rated items
+            so the systems are evaluated over the non-trivial recommendations, afterwards they use the train set for
+            the Netflix dataset and for the test set they filter the Netflix test set only with the 5-star rated items.
+            Then they take every item and predict the rating of it and 1000 items unrated by the user. After they define
+            a hit or a succes if the position of the predicted item is in the first N position. Finally they explain
+            every algorithm they are going to test and the final results where PureSVD performs the best in top-N
+            recommendations.</p>
+        <p>
+            I found this paper really interesting first because they are able to demonstrate that the most classical
+            metrics are not always the best ones, which for me is a really strong fact. With that they try to look
+            for a metric that was able to have good recommendations on the long tail head instead of the trivial
+            recommendations, which is what a recommender system should target so it does not recommend the most popular
+            or trivial items. Something I did not like in a visual perspective is that the analysis of the different
+            charts is made on a totally different page so it is very hard to follow the explanation and afterwards looking
+            to the charts. Something very particular is that they obtained a result they did not expected and even with that
+            they are able to explain the results obtain. For me it is a really good and complete paper that explains every
+            aspect of it.
+        </p>
+    </li>
+    <li>
         <h1>Scalable Collaborative Filtering Approaches for Large Recommender Systems</h1>
         <h4>Gábor Takács, István Pilászy, Bottyán Németh and Domonkos Tikk</h4>
         <p style="width: 50%">
