@@ -13,6 +13,36 @@
 </div>
 <ul>
     <li>
+        <h1>BPR: Bayesian Personalized Ranking from Implicit Feedback</h1>
+        <h4>Steffen Rendle, Christoph Freudenthaler, Zeno Gantner and Lars Schmidt-Thieme</h4>
+        <p style="width: 50%;">
+            In this paper the authors present a new optimization criterion called BPR-OPT for personalized ranking from
+            implicit feedback, and with this they also present a learning method called LearnBPR in order to maximize the
+            usage of model that use BPR-OPT. Afterwards they talk about the difference between the model they are proposing
+            and the state of art in this matter, where they make clear the fact that the model uses triplets of
+            (user, item_1, item_2) instead of the classic models where it is used (user, item). In the next sections of
+            the paper the authors make a more formal explanation of the optimization criterion and try to make the analogy
+            with AUC. Finally they talk about LearnBPR, which is basically a stochastic gradient descent but the big difference
+            is that it has to be complemented with bootstrap sampling. After the explanation of LearnBPR they talk about the
+            models they are going to compare the new criterion they are proposing and how this criterion can be applied to
+            classic recommender models as kNN and MF. In the last section they talk about the evaluation methodology and how
+            this criterion makes the models increase their performance.
+        </p>
+        <p style="width: 50%;">
+            Personally I found really interesting this paper, they are offering a new method to increase the perfomance of
+            models that have been around for a lot of time in this subject. Particularly after reading the paper I found
+            really interesting the fact of using a bootstrap sampling, which is something really common when making random
+            forests ensemble models, and how they are able to apply this method that in other areas works great and discovering
+            that in this task of recommeding items it has a similar effect on increasing the perfomance. In second place,
+            I found interesting the fact that they are not trying to predict a number (ranking) of an item, instead they
+            are trying to classify the difference between an item and another for a particular user. And in some way they
+            change the typical way of understanding datasets for this models, as if a user haven't seen and object then it means
+            that the user does not like that user. I found this paper simply excellent, very clear on their ideas but in
+            some way a little challenging in the mathematical part and in trying to understand the many models that are
+            being presented along the paper.
+        </p>
+    </li>
+    <li>
         <h1>Content-Based Artwork Recommendation</h1>
         <h4>Pablo Messina, Vicente Rodriguez, Denis Parra, Cristoph Trattner and Alvaro Soto</h4>
         <p style="width: 50%">
