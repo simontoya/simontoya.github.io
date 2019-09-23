@@ -13,6 +13,29 @@
 </div>
 <ul>
     <li>
+        <h1>Deep Neural Networks for YouTube Recommendations</h1>
+        <h4>Paul Covington, Jay Adams and Emre Sargin</h4>
+        <p style="width: 50%">
+            In this paper the authors explained their propose Deep Neural Network for making a candidate recommendation
+            and how to rank them, in particular the videos from YouTube. First they talk about the candidate recommendation,
+            and they explained it as a classification, an extreme multiclass. They used a softmax classifier but they weight
+            the candidates so they have an order, instead of using a hierarchical softmax or other techniques applied in
+            decision trees. Afterwards they talk about the architecture of the neural network, that for me is a perfect
+            piece of engineering, how they are able to make the different information they have available per user to fit
+            in the network and how to interpret the different inputs so they network can improve faster.
+        </p>
+        <p style="width: 50%">
+            After reading lots of paper I definitely found this one the best, how they start from a very simple model but
+            later they are able to incorporate different techniques and even avoid the negative sampling. And the idea
+            of predicting the time the user will watch a video is simply incredible. Nevertheless, after reading the paper
+            I asked myself how the model could be even better, probably by incorporating more metadata from the user, right
+            now for example google chrome allows you to log in and it remains logged in for all the site which have a google
+            log in system, it would be great if the network could include search history among other things. Maybe for music
+            which songs have they listen to in Spotify and for a particular artist show in YouTube the videos of songs that
+            Spotify does not have.
+        </p>
+    </li>
+    <li>
         <h1>BPR: Bayesian Personalized Ranking from Implicit Feedback</h1>
         <h4>Steffen Rendle, Christoph Freudenthaler, Zeno Gantner and Lars Schmidt-Thieme</h4>
         <p style="width: 50%;">
